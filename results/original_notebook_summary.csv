@@ -1,0 +1,7 @@
+strategy,annual_arithmetic_return_pct,annual_volatility_pct,sharpe_zero_rf,max_drawdown_pct
+Equal Weight,6.12,7.77,0.79,-18.26
+60/40,7.63,9.29,0.82,-21.74
+Markowitz Min Variance,2.17,2.13,1.02,-6.56
+Michaud Resampled,2.23,2.16,1.03,-6.58
+Markowitz Max Sharpe,4.71,3.18,1.48,-7.55
+Black-Litterman,6.42,6.19,1.04,-7.43
