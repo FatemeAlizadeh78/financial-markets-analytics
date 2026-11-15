@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dynamic-multi-asset-allocation"
+version = "0.1.0"
+description = "Rolling multi-asset allocation with Markowitz, Michaud resampling and Black-Litterman views"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "pandas>=2.2,<3", "scipy>=1.12,<2", "matplotlib>=3.8,<4", "openpyxl>=3.1,<4"]
+
+[project.optional-dependencies]
+notebooks = ["jupyterlab>=4,<5", "seaborn>=0.13,<1", "ipywidgets>=8,<9"]
+
+[project.scripts]
+asset-allocation = "asset_allocation.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
